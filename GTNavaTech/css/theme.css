@@ -1,0 +1,15 @@
+﻿.off-canvas-wrap {
+ height:100%;
+}
+
+#map-canvas {
+    height: 100%;
+}
+
+.main-section {
+    height: 100%;
+}
+
+.inner-wrap {
+    height: 100%;
+}

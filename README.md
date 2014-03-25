@@ -1,2 +1,10 @@
-3750
+GT NavaTech
 ====
+Over the years, Georgia Tech has grown as a campus and in student population. As a result, many students and visitors often faced with difficulties in finding building locations and discovering short route to their destinations. While campus maps are effective, no one at a given time has one on hand. Locating a building on the map can be tedious and the map has become more complicated as more and more buildings continuously added to Tech’s campus. Our team proposes a mobile app that would allow users to not only find the building that they are looking for, but also help them decide whether or not they are better off walking or taking other forms of transportations to their destination. To increase the functionality, the app will inform the user what bus stop they need to get off of on. Or, if they decide not to take the bus, it will provide a suggested route with directions for walking or biking.
+
+One of the big obstacles the team could potentially face is a severe drop off in users once they’ve already discovered the shortest routes to various buildings on campus. However, with construction on campus being an everyday affair, the campus seems to be getting modified more often than one would think. Being in the heart of Atlanta leads to Tech being plagued with bad traffic during rush hour or when a major event is happening within the city. Within Tech’s campus, users will be able to see in real time the effects of traffic and weather reflected through bus arrival times or on-screen maps. Hopefully, our app will provide means in which users are able to make informed decisions.
+
+Prototype
+====
+
+The mobile web platform is composed responsive webpage designed through Foundation Grid. The backend is driven through Parse database interactions created through JavaScript. See https://parse.com/docs/js_guide for full documentation for Parse using JavaScript.

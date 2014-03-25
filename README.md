@@ -7,4 +7,6 @@ One of the big obstacles the team could potentially face is a severe drop off in
 Prototype
 ====
 
-The mobile web platform is composed responsive webpage designed through Foundation Grid. The backend is driven through Parse database interactions created through JavaScript. See https://parse.com/docs/js_guide for full documentation for Parse using JavaScript.
+The mobile web app is a responsive webpage designed through Foundation Grid. Foundation Grid allows the page to be changed depending on screen size. For the sake of rapid prototyping, this was the best option for spining up something users can interact with quickly. Developing an android app would be the next step in terms of a final product. The backend of the webapp is driven through Parse, an online database that has the ability to received interactions created through JavaScript. See https://parse.com/docs/js_guide for full documentation for Parse using JavaScript.
+
+Within the prototype, we intend to have users accomplish two key user task that go hand in hand with our user goals. First, we want the user to navigate to a location from the home screen, either using their current location or by chosing their own from address. We also want the user to create a schedule and navigate to locations through that interface. 

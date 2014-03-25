@@ -14,3 +14,27 @@
 .inner-wrap {
     height: 100%;
 }
+
+a.button {
+    width: 100%;
+}
+    a.button i {
+        font-size: 2em;
+        margin-left: -8px;
+    }
+
+.searchBar {
+    margin-top: 1em;
+    position: absolute;
+    z-index: 3;
+}
+
+.autocomplete {
+    position: absolute;
+    z-index: 100;
+}
+
+#navigateBtn {
+    
+}
+.ui-helper-hidden-accessible { display:none; }

@@ -19,6 +19,10 @@ body {
     height: 100%;
 }
 
+
+.title a {
+    color: white;
+}
 a.button {
     width: 100%;
 }

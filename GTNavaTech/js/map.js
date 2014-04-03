@@ -22,8 +22,8 @@ function success(position) {
     geocoder = new google.maps.Geocoder();
 
     curr_position = [position.coords.latitude, position.coords.longitude];
-    //var myLatlng = new google.maps.LatLng(33.775753, -84.396291);
-    var myLatlng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+    var myLatlng = new google.maps.LatLng(33.777104, -84.396006);
+    //var myLatlng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
     var mapOptions = {
         center: myLatlng,
         disableDefaultUI: true,
@@ -52,23 +52,24 @@ $(document).ready(function () {
 
     $("#navigateBtn").on("click", function () {
 
-        var input_from = $(".input_my_location").val();
-        var input_to = $(".input_to_location").val();
+        window.location = '/GTNavaTech/navigate.html';
+        //var input_from = $(".input_my_location").val();
+        //var input_to = $(".input_to_location").val();
 
-        if (input_from == '' || input_from == undefined) {
-            from_address = curr_position;
-        } else {
-            from_address = getAddressFromSearch(input_from);
-        }
+        //if (input_from == '' || input_from == undefined) {
+        //    from_address = curr_position;
+        //} else {
+        //    from_address = getAddressFromSearch(input_from);
+        //}
 
-        if (input_to != '' && input_to != undefined) {
-            to_address = getAddressFromSearch(input_to);
-            //Klaus 33.777104, -84.396006
-            window.location = '/GTNavaTech/navigate.html?to_address=' + encodeURIComponent("33.777104, -84.396006") + '&from_address=' + encodeURIComponent(from_address);
+        //if (input_to != '' && input_to != undefined) {
+        //    to_address = getAddressFromSearch(input_to);
+        //    //Klaus 33.777104, -84.396006
+        //    window.location = '/GTNavaTech/navigate.html?to_address=' + encodeURIComponent("33.777104, -84.396006") + '&from_address=' + encodeURIComponent(from_address);
 
-        } else {
-            alert("please enter a location to navigate to");
-        }
+        //} else {
+        //    alert("please enter a location to navigate to");
+        //}
 
     });
 

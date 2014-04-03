@@ -10,7 +10,7 @@ $(document).ready(function () {
     query.find({
         success: function (results) {
             results.forEach(function (building) {
-                buildingSource.push(building.get("name").toLowerCase());
+                buildingSource.push(building.get("name"));
             });
 
             bind_source_autocomplete();

@@ -6,24 +6,15 @@
     <title>GT NavaTech</title>
 
     <link href="img/gtIcon.ico" rel="icon" type="image/x-icon" />
-
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/flaticon.css" />
     <link rel="stylesheet" href="css/theme.css" />
 
-    <script src="js/vendor/modernizr.js"></script>
-
     <script src="http://www.parsecdn.com/js/parse-1.2.18.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
-
-    <script type="text/javascript"
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_0TcrVoEn7ybwZLDP6OUlMzBbjxGsmoI&sensor=true">
-    </script>
-    <script type="text/javascript"
-        src="https://maps.googleapis.com/maps/api/js?libraries=geometry,places,weather&sensor=true">
-    </script>
-
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_0TcrVoEn7ybwZLDP6OUlMzBbjxGsmoI&sensor=true"></script>
+    <script src="js/vendor/modernizr.js"></script>
     <script src="js/map.js"></script>
     <script src="js/main.js"></script>
 </head>
@@ -43,8 +34,8 @@
                 <ul class="off-canvas-list">
                     <li>
                         <label>GT NavaTech</label></li>
-                    <li><a href="#">Create Schedule</a></li>
-                    <li><a href="#">Navigate To Location</a></li>
+                    <li><a href="schedule.html">Create Schedule</a></li>
+                    <li><a href="home.html">Navigate To Location</a></li>
                     <li><a href="#">Help</a></li>
                     <li><a href="#">Settings</a></li>
                 </ul>
@@ -60,7 +51,7 @@
                         </div>
                         <div class="row">
                             <div class="column">
-                                <input class="input_to_location" type="search" placeholder="To Location" />
+                                <input class="input_to_location" type="search" placeholder="Destination Location" />
                                 <div class="autocomplete_to_location autocomplete"></div>
                             </div>
                         </div>
@@ -83,11 +74,6 @@
             <a class="exit-off-canvas"></a>
         </div>
     </div>
-
-
-
-
-
     <script src="js/foundation.min.js"></script>
     <script>
         $(document).foundation();

@@ -41,22 +41,24 @@
                 </ul>
             </aside>
             <section class="main-section">
-                <div class="row">
-                    <div class="medium-4 small-4 large-4 column">
-                        <a href="#" class="walkingIcon"><i class="flaticon-direction1"></i></a>
+                <div class="row transportationOptions">
+                    <div class="medium-4 small-4 large-4 column transOption" data-type="walk">
+                        <a href="#" class="walkingIcon"><i class="flaticon-silhouette4"></i></a>
                     </div>
-                    <div class="medium-4 small-4 large-4 column">
-                        <a href="#" class="busIcon"><i class="flaticon-direction1"></i></a>
+                    <div class="medium-4 small-4 large-4 column transOption" data-type="bus">
+                        <a href="#" class="busIcon"><i class="flaticon-train5"></i></a>
                     </div>
-                    <div class="medium-4 small-4 large-4 column">
-                        <a href="#" class="bikingIcon"><i class="flaticon-direction1"></i></a>
+                    <div class="medium-4 small-4 large-4 column transOption" data-type="bike">
+                        <a href="#" class="bikingIcon"><i class="flaticon-cycling"></i></a>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="small-3 medium-3 large-3 column">
 
-                    </div>
+                <div id="map-canvas">
+                    <img class="content walkContent hide" src="img/walking.PNG" />
+                    <img class="column content busContent hide" src="img/bus.PNG" />
+                    <img class="column content bikeContent hide" src="img/biking.PNG" />
                 </div>
+
             </section>
             <a class="exit-off-canvas"></a>
         </div>

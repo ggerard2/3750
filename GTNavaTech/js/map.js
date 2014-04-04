@@ -50,29 +50,6 @@ google.maps.event.addDomListener(window, 'load', initialize);
 $(document).ready(function () {
     Parse.initialize("FbWhMH1sviYaADqZE81YaAy2hz816cBNr7gwHhvT", "flxbQOKGFIWEs23LhJf7i8SGn0WrEtfQSFPnzO6J");
 
-    $("#navigateBtn").on("click", function () {
-
-        window.location = '/GTNavaTech/navigate.html';
-        //var input_from = $(".input_my_location").val();
-        //var input_to = $(".input_to_location").val();
-
-        //if (input_from == '' || input_from == undefined) {
-        //    from_address = curr_position;
-        //} else {
-        //    from_address = getAddressFromSearch(input_from);
-        //}
-
-        //if (input_to != '' && input_to != undefined) {
-        //    to_address = getAddressFromSearch(input_to);
-        //    //Klaus 33.777104, -84.396006
-        //    window.location = '/GTNavaTech/navigate.html?to_address=' + encodeURIComponent("33.777104, -84.396006") + '&from_address=' + encodeURIComponent(from_address);
-
-        //} else {
-        //    alert("please enter a location to navigate to");
-        //}
-
-    });
-
 });
 
 function getAddressFromSearch(input) {

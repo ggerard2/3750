@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/flaticon.css" />
     <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/navigate.css" />
 
     <script src="http://www.parsecdn.com/js/parse-1.2.18.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -32,11 +33,10 @@
             </nav>
             <aside class="left-off-canvas-menu">
                 <ul class="off-canvas-list">
-                    <li>
-                        <label>GT NavaTech</label></li>
+                    <li><label>GT NavaTech</label></li>
                     <li><a href="schedule.html">Create Schedule</a></li>
                     <li><a href="home.html">Navigate To Location</a></li>
-                    <li><a href="#">Help</a></li>
+                    <li><a href="favorites.html">Favorites</a></li>
                     <li><a href="#">Settings</a></li>
                 </ul>
             </aside>
@@ -44,21 +44,162 @@
                 <div class="row transportationOptions">
                     <div class="medium-4 small-4 large-4 column transOption" data-type="walk">
                         <a href="#" class="walkingIcon"><i class="flaticon-silhouette4"></i></a>
-                    </div>
-                    <div class="medium-4 small-4 large-4 column transOption" data-type="bus">
-                        <a href="#" class="busIcon"><i class="flaticon-train5"></i></a>
+                        <div>Walking : 7 min</div>
                     </div>
                     <div class="medium-4 small-4 large-4 column transOption" data-type="bike">
                         <a href="#" class="bikingIcon"><i class="flaticon-cycling"></i></a>
+                        <div>Biking : 2 min</div>
+                    </div>
+                    <div class="medium-4 small-4 large-4 column transOption" data-type="bus">
+                        <a href="#" class="busIcon"><i class="flaticon-train5"></i></a>
+                        <div>Trolley : 3 & 10 min</div>
                     </div>
                 </div>
-
-                <div id="map-canvas">
-                    <img class="content walkContent hide" src="img/walking.PNG" />
-                    <img class="column content busContent hide" src="img/bus.PNG" />
-                    <img class="column content bikeContent hide" src="img/biking.PNG" />
+                <div class="row">
+                    <div class="column weather header">
+                        Current Weather : Cloudy, 50&#176;, 34&#37; Chance of Thunderstorms
+                    </div>
                 </div>
-
+                <div class="row helperText">
+                    <div class="column small-centered medium-centered large-centered">
+                        Tap your desired mode of transporation above.
+                    </div>
+                </div>
+                <div id="map-canvas">
+                    <img class="content walkMap hide" src="img/walking.PNG" />
+                    <img class="content bikeMap hide" src="img/biking.PNG" />
+                    <img class="content busMap hide" src="img/bus.PNG" />
+                </div>
+                <div class="row directions">
+                    <div class="column steps walkDirections hide">
+                        <ul>
+                            <li>
+                                <div class="row">
+                                    <div class="small-9 medium-6 large-6 column">Head south</div>
+                                    <div class="small-2 medium-6 large-6 column">335 ft</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="small-9 medium-6 large-6 column">Turn left</div>
+                                    <div class="small-2 medium-6 large-6 column">233 ft</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="small-9 medium-6 large-6 column">Turn right</div>
+                                    <div class="small-2 medium-6 large-6 column">249 ft</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="small-9 medium-6 large-6 column">Turn right</div>
+                                    <div class="small-2 medium-6 large-6 column">167 ft</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="small-9 medium-6 large-6 column">Turn left</div>
+                                    <div class="small-2 medium-6 large-6 column">430 ft</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="small-9 medium-6 large-6 column">Turn right</div>
+                                    <div class="small-2 medium-6 large-6 column">272 ft</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="small-9 column">Destination will be on the left</div>
+                                    <img class="bump" src="img/studentCenter.jpg" />
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="column steps bikeDirections hide">
+                        <ul>
+                            <li>
+                                <div class="row">
+                                    <div class="small-9 medium-6 large-6 column">Head south</div>
+                                    <div class="small-2 medium-6 large-6 column">335 ft</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="small-9 medium-6 large-6 column">Turn left</div>
+                                    <div class="small-2 medium-6 large-6 column">233 ft</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="small-9 medium-6 large-6 column">Turn right</div>
+                                    <div class="small-2 medium-6 large-6 column">249 ft</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="small-9 medium-6 large-6 column">Turn right</div>
+                                    <div class="small-2 medium-6 large-6 column">167 ft</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="small-9 medium-6 large-6 column">Turn left</div>
+                                    <div class="small-2 medium-6 large-6 column">430 ft</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="small-9 medium-6 large-6 column">Turn right</div>
+                                    <div class="small-2 medium-6 large-6 column">272 ft</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="small-9 column">Destination will be on the left</div>
+                                    <img class="bump" src="img/studentCenter.jpg" />
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="column steps busDirections hide">
+                        <ul>
+                            <li>
+                                <div class="row">
+                                    <div class="small-9 medium-6 large-6 column">Head southeast towards Ferst Dr</div>
+                                    <div class="small-2 medium-6 large-6 column">256 ft</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="small-9 medium-6 large-6 column">Get on Trolley headed counterclockwise</div>
+                                    <div class="small-2 medium-6 large-6 column">8 min</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="small-9 medium-6 large-6 column">Get off at Student Center Stop</div>
+                                    <div class="small-2 medium-6 large-6 column"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="small-9 column">Destination will be on the left</div>
+                                    <img class="bump" src="img/studentCenter.jpg" />
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row favorites hide">
+                    <div class="column">
+                        <a href="#" class="addFavorites button">Add Place to Favorites</a>
+                    </div>
+                    <div class="column">
+                        <a href="favorites.html" class="viewFavorites button">View Favorites</a>
+                    </div>
+                </div>
             </section>
             <a class="exit-off-canvas"></a>
         </div>

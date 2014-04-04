@@ -1,9 +1,17 @@
 ﻿$(document).ready(function () {
     $('.transOption').on('click', function () {
+        $('.helperText').hide();
         unselectAllTabOptions();
         $(this).css("background-color", "rgb(230, 193, 0)");
         var type = $(this).data("type");
         showContent(type);
+
+        $('.favorites').removeClass('hide');
+
+    });
+
+    $('.addFavorites').on('click', function () {
+        $(this).html('Saved!');
     });
 });
 
@@ -13,21 +21,26 @@ function unselectAllTabOptions() {
     });   
 }
 
-function unselectContent() {
+function unselectAllContent() {
     $.each($('.content'), function (index, element) {
+        $(element).addClass('hide');
+    });
+
+    $.each($('.steps'), function (index, element) {
         $(element).addClass('hide');
     });
 }
 
 function showContent(type) {
+    unselectAllContent();
     if (type == 'walk') {
-        unselectContent();
-        $('.walkContent').removeClass('hide');
+        $('.walkMap').removeClass('hide');
+        $('.walkDirections').removeClass('hide');
     } else if (type == 'bus') {
-        unselectContent();
-        $('.busContent').removeClass('hide');
+        $('.busMap').removeClass('hide');
+        $('.busDirections').removeClass('hide');
     } else {
-        unselectContent();
-        $('.bikeContent').removeClass('hide');
+        $('.bikeMap').removeClass('hide');
+        $('.bikeDirections').removeClass('hide');
     }
 }

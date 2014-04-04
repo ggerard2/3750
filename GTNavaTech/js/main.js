@@ -16,6 +16,15 @@ $(document).ready(function () {
             bind_source_autocomplete();
         }
     });
+
+    $("#navigateBtn").on("click", function () {
+        var form_validates = $('.input_to_location').val() != '';
+        if (form_validates) {
+            window.location = '/GTNavaTech/navigate.html';
+        } else {
+            alert('Please enter a valid destination.');
+        }
+    });
 });
 
 function bind_source_autocomplete() {

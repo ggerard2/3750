@@ -1,6 +1,6 @@
 ﻿
 .off-canvas-wrap {
-    height:100%;
+    height: 100%;
 }
 
 #map-canvas {
@@ -19,13 +19,18 @@ body {
     height: 100%;
 }
 
+.bump {
+    margin-top: 1em;
+}
 
 .title a {
     color: white;
 }
+
 a.button {
     width: 100%;
 }
+
     a.button i {
         font-size: 2em;
         margin-left: -8px;
@@ -43,9 +48,11 @@ a.button {
 }
 
 #navigateBtn {
-    
 }
-.ui-helper-hidden-accessible { display:none; }
+
+.ui-helper-hidden-accessible {
+    display: none;
+}
 
 input[type="search"] {
     border: 1px solid #A3A2A2;
@@ -76,7 +83,7 @@ input::-webkit-input-placeholder {
 }
 
 ui-front {
-z-index: 100;
+    z-index: 100;
 }
 
 .ui-menu .ui-menu-item a {
@@ -97,7 +104,6 @@ z-index: 100;
     margin: 0;
     padding: 0;
     width: 100%;
-
     z-index: 200;
 }
 
@@ -113,3 +119,25 @@ z-index: 100;
 .hide {
     display: none;
 }
+
+
+ul {
+    margin: 0 !important;
+}
+
+.listDest {
+    margin-top: 1em;
+}
+
+    .listDest > div > ul {
+        list-style-type: none;
+    }
+
+        .listDest > div > ul > li {
+            padding: 1em 0;
+            border-bottom: 1px solid #e6e6e6;
+        }
+
+            .listDest > div > ul > li:first-child {
+                border-top: 1px solid #e6e6e6;
+            }

@@ -22,7 +22,8 @@ function success(position) {
     geocoder = new google.maps.Geocoder();
 
     curr_position = [position.coords.latitude, position.coords.longitude];
-    var myLatlng = new google.maps.LatLng(33.777104, -84.396006);
+    var myLatlng = new google.maps.LatLng(33.777104, -84.396006); //Klaus
+    //var myLatlng = new google.maps.LatLng(33.778349, -84.403762); //Fitten
     //var myLatlng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
     var mapOptions = {
         center: myLatlng,

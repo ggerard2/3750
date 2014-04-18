@@ -1,0 +1,136 @@
+body {
+height:100%;
+}
+
+.top-bar .name h1 a {
+	/* font-weight:bold; */
+	text-align: left;
+}
+
+.top-bar .toggle-topbar.menu-icon a {
+	display:none;
+}
+
+hr {
+margin: 0.25rem 0 1.1875rem;
+}
+
+.tabs dd.active a {
+background: rgb(230, 193, 0);
+}
+
+
+.tabs-content > .content {
+	padding:0;
+}
+
+.button {
+width:100%;
+position:relative;
+bottom:0;
+}
+
+#panel1 ul {
+	margin-top: 10px;
+	margin-bottom: -37px;
+}
+
+#panel1 .button {
+	font-size: 0.9rem;
+background-color: #001946;
+border-color: #bababa;
+color: #E7E7E7;
+}
+
+#panel2 ul {
+	margin-top: 10px;
+	margin-bottom: -37px;
+}
+
+#panel2 .button {
+	font-size:1.0rem;
+background-color: #001946;
+border-color: #bababa;
+color: #E7E7E7;
+}
+
+#panel3 ul {
+	margin-top: 10px;
+	margin-bottom: -37px;
+}
+
+#panel3 .button {
+	font-size:1.0rem;
+background-color: #001946;
+border-color: #bababa;
+color: #E7E7E7;
+}
+
+#panel4 ul {
+	margin-top: 10px;
+	margin-bottom: -37px;
+}
+
+#panel4 .button {
+	font-size:1.0rem;
+background-color: #001946;
+border-color: #bababa;
+color: #E7E7E7;
+}
+
+h3 {
+color:#001946;
+}
+
+#new {
+width:100%;
+position:relative;
+bottom:0;
+}
+
+label {
+font-size:1.3rem;
+color:#001946;
+}
+
+label.inline {
+padding:0;
+margin: 0.2rem -0.5rem 0.3rem 5.3rem;
+}
+
+.one {
+font-size:1.0rem;
+}
+
+form .row .row{
+margin:0 0 49px 0px;
+}
+
+[class*="column"] + [class*="column"]:last-child {
+float:left;
+}
+
+h1 {
+text-align:center;
+font-size:75px;
+margin-bottom:100px;
+margin-top:75px;
+font-family: 'Share Tech', sans-serif;
+line-height:80px;
+}
+
+button.secondary, .button.secondary {
+background-color: #001946;
+border-color: #bababa;
+color: #D5D5D5;
+}
+
+button.alert, .button.alert {
+background-color: #ba9000;
+border-color: #9e0c0f;
+color: black;
+}
+
+
+
+

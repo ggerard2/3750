@@ -1,0 +1,604 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GT NavaTech</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/cal.css" />
+    <script src="http://www.parsecdn.com/js/parse-1.2.18.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_0TcrVoEn7ybwZLDP6OUlMzBbjxGsmoI&sensor=true&libraries=geometry,places,weather&sensor=true"></script>
+    <script src="js/vendor/modernizr.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <div class="off-canvas-wrap">
+        <div class="inner-wrap">
+            <nav class="tab-bar">
+                <section class="left-small">
+                    <a class="left-off-canvas-toggle menu-icon"><span></span></a>
+                </section>
+
+                <section class="middle tab-bar-section">
+                    <h1 class="title"><a href="index.html">< Home </a></h1>
+                </section>
+            </nav>
+            <aside class="left-off-canvas-menu">
+                <ul class="off-canvas-list">
+                    <li>
+                        <label>GT NavaTech</label></li>
+                    <li><a href="schedule.html">Schedule</a></li>
+                    <li><a href="index.html">Navigate To Location</a></li>
+                    <li><a href="favorites.html">Favorites</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+            </aside>
+            <section class="main-section">
+                <div class="row">
+                    <div class="column header">
+                        Schedule
+                    </div>
+                </div>
+                <div class="row bump">
+                    <div class="large-12 columns">
+                        <dl class="tabs" data-tab>
+                            <dd class="active"><a href="#panel2-1">Day</a></dd>
+                            <dd><a href="#panel2-2">Month</a></dd>
+                        </dl>
+                        <div class="tabs-content">
+                            <div class="content active" id="panel2-1" style="margin-bottom: 30%;">
+                                <dl class="accordion" data-accordion>
+                                    <dd>
+                                        <a href="#panel1">10:05 am - Math 1502</a>
+                                        <div id="panel1" class="content active">
+                                            <h3>Location</h3>
+                                            <h4>Howey L1</h4>
+                                            <br />
+                                            <h3>Days</h3>
+                                            <h4>MWF</h4>
+                                            <br />
+                                            <ul class="small-block-grid-2">
+                                                <li><a href="#" class="large secondary button">Delete</a></li>
+                                                <li><a href="#" class="large secondary button">Navigate Me</a></li>
+                                            </ul>
+                                        </div>
+                                    </dd>
+                                    <dd>
+                                        <a href="#panel2">12:05pm - CS 1301</a>
+                                        <div id="panel2" class="content">
+                                            <h3>Location</h3>
+                                            <h4>Klaus 1443</h4>
+                                            <br />
+                                            <h3>Days</h3>
+                                            <h4>MW</h4>
+                                            <br />
+                                            <ul class="small-block-grid-2">
+                                                <li><a href="#" class="large secondary button">Delete</a></li>
+                                                <li><a href="#" class="large secondary button">Navigate Me</a></li>
+                                            </ul>
+                                        </div>
+                                    </dd>
+                                    <dd>
+                                        <a href="#panel4">1:05pm - ENGL 1102</a>
+                                        <div id="panel4" class="content">
+                                            <h3>Location</h3>
+                                            <h4>Skiles 345</h4>
+                                            <br />
+                                            <h3>Days</h3>
+                                            <h4>MWF</h4>
+                                            <br />
+                                            <ul class="small-block-grid-2">
+                                                <li><a href="#" data-reveal-id="myModal" class="large secondary button">Delete</a></li>
+                                                <li><a href="#" class="large secondary button">Navigate Me</a></li>
+                                            </ul>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div id="myModal" class="reveal-modal tiny" data-reveal>
+                                <h3>This action will delete this event. Are you sure?</h3>
+                                <br>
+                                <br>
+                                <ul class="small-block-grid-2">
+                                    <li><a href="newschedule.html" class="large secondary button">Cancel</a></li>
+                                    <li><a href="schedule.html" class="large success button">Delete</a></li>
+                                </ul>
+                                <a class="close-reveal-modal">&#215;</a>
+                            </div>
+                            <div class="content" id="panel2-2" style="margin-bottom: 30%;">
+                                <p>
+                                    <div class="calendar">
+                                        <div class="day_names cal_row">
+                                            <div>Sun<span>day</span></div>
+                                            <div>Mon<span>day</span></div>
+                                            <div>Tue<span>sday</span></div>
+                                            <div>Wed<span>nesday</span></div>
+                                            <div>Thur<span>sday</span></div>
+                                            <div>Fri<span>day</span></div>
+                                            <div>Sat<span>urday</span></div>
+                                        </div>
+                                        <div class="cal_row">
+                                            <div class="prev_month">
+                                                <i>29</i>
+                                            </div>
+                                            <div class="prev_month">
+                                                <i>30</i>
+                                            </div>
+                                            <div>
+                                                <i>1</i>
+                                            </div>
+                                            <div>
+                                                <i>2</i>
+                                            </div>
+                                            <div>
+                                                <i>3</i>
+                                            </div>
+                                            <div>
+                                                <i>4</i>
+                                            </div>
+                                            <div>
+                                                <i>5</i>
+                                            </div>
+
+                                            <div>
+                                                <i>6</i>
+                                            </div>
+                                            <div class="has_event">
+                                                <i>7</i>
+                                                <a href="#">MATH 1502</a><br />
+ 
+                                    <a href="#">CS 1301</a><br />
+   
+                                    <a href="#">ENGL 1102</a><br />
+       
+                                            </div>
+                                            <div>
+                                                <i>8</i>
+                                            </div>
+                                            <div class="has_event">
+                                                <i>9</i>
+                                                <a href="#">MATH 1502</a><br />
+ 
+                                    <a href="#">CS 1301</a><br />
+   
+                                    <a href="#">ENGL 1102</a><br />
+       
+                                            </div>
+                                            <div>
+                                                <i>10</i>
+                                            </div>
+                                            <div class="has_event">
+                                                <i>11</i>
+                                                <a href="#">MATH 1502</a><br />
+ 
+                                    <a href="#">CS 1301</a><br />
+   
+                                    <a href="#">ENGL 1102</a><br />
+       
+                                            </div>
+                                            <div>
+                                                <i>12</i>
+                                            </div>
+
+                                            <div>
+                                                <i>13</i>
+                                            </div>
+                                            <div class="has_event">
+                                                <i>14</i>
+                                                <a href="#">MATH 1502</a><br />
+ 
+                                    <a href="#">CS 1301</a><br />
+   
+                                    <a href="#">ENGL 1102</a><br />
+       
+                                            </div>
+                                            <div>
+                                                <i>15</i>
+                                            </div>
+                                            <div class="has_event">
+                                                <i>16</i>
+                                                <a href="#">MATH 1502</a><br />
+ 
+                                    <a href="#">CS 1301</a><br />
+   
+                                    <a href="#">ENGL 1102</a><br />
+       
+                                            </div>
+                                            <div>
+                                                <i>17</i>
+                                            </div>
+                                            <div class="has_event">
+                                                <i>18</i>
+                                                <a href="#">MATH 1502</a><br />
+ 
+                                    <a href="#">CS 1301</a><br />
+   
+                                    <a href="#">ENGL 1102</a><br />
+       
+                                            </div>
+                                            <div>
+                                                <i>19</i>
+                                            </div>
+
+                                            <div>
+                                                <i>20</i>
+                                            </div>
+                                            <div class="has_event">
+                                                <i>21</i>
+                                                <a href="#">MATH 1502</a><br />
+ 
+                                    <a href="#">CS 1301</a><br />
+   
+                                    <a href="#">ENGL 1102</a><br />
+       
+                                            </div>
+                                            <div>
+                                                <i>22</i>
+                                            </div>
+                                            <div class="has_event">
+                                                <i>23</i>
+                                                <a href="#">MATH 1502</a><br />
+ 
+                                    <a href="#">CS 1301</a><br />
+   
+                                    <a href="#">ENGL 1102</a><br />
+       
+                                            </div>
+                                            <div>
+                                                <i>24</i>
+                                            </div>
+                                            <div class="has_event">
+                                                <i>25</i>
+                                                <a href="#">MATH 1502</a><br />
+ 
+                                    <a href="#">CS 1301</a><br />
+   
+                                    <a href="#">ENGL 1102</a><br />
+       
+                                            </div>
+                                            <div>
+                                                <i>26</i>
+                                            </div>
+
+                                            <div>
+                                                <i>27</i>
+                                            </div>
+                                            <div class="has_event">
+                                                <i>28</i>
+                                                <a href="#">MATH 1502</a><br />
+ 
+                                    <a href="#">CS 1301</a><br />
+   
+                                    <a href="#">ENGL 1102</a><br />
+       
+                                            </div>
+                                            <div>
+                                                <i>29</i>
+                                            </div>
+                                            <div class="has_event">
+                                                <i>30</i>
+                                                <a href="#">MATH 1502</a><br />
+ 
+                                    <a href="#">CS 1301</a><br />
+   
+                                    <a href="#">ENGL 1102</a><br />
+       
+                                            </div>
+                                            <div>
+                                                <i>31</i>
+                                            </div>
+                                            <div class="next_month">
+                                                <i>April 1</i>
+                                            </div>
+                                            <div class="next_month">
+                                                <i>2</i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row" style="position: relative, bottom:0;">
+                            <div class="large-12 medium-12 small-12 columns">
+                                <a href="newevent.html" class="medium secondary button" id="new">New Event</a>          
+     
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <a class="exit-off-canvas"></a>
+        </div>
+    </div>
+    <script src="js/foundation.min.js"></script>
+    <script>
+        $(document).foundation();
+    </script>
+    <!--<nav class="top-bar" data-topbar>
+        <ul class="title-area">
+            <li class="name">
+                <h1><a href="#">< Home</a></h1>
+            </li>
+            <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+        </ul>
+    </nav>
+
+    <h5>Schedule</h5>
+    <hr>
+    <div class="row">
+        <div class="large-12 columns">
+            <dl class="tabs" data-tab>
+                <dd class="active"><a href="#panel2-1">Day</a></dd>
+                <dd><a href="#panel2-2">Month</a></dd>
+            </dl>
+            <div class="tabs-content">
+                <div class="content active" id="panel2-1" style="margin-bottom: 30%;">
+                    <dl class="accordion" data-accordion>
+                        <dd>
+                            <a href="#panel1">10:05 am - Math 1502</a>
+                            <div id="panel1" class="content active">
+                                <h3>Location</h3>
+                                <h4>Howey L1</h4>
+                                <br />
+                                <h3>Days</h3>
+                                <h4>MWF</h4>
+                                <br />
+                                <ul class="small-block-grid-2">
+                                    <li><a href="#" class="large secondary button">Delete</a></li>
+                                    <li><a href="#" class="large secondary button">Navigate Me</a></li>
+                                </ul>
+                            </div>
+                        </dd>
+                        <dd>
+                            <a href="#panel2">12:05pm - CS 1301</a>
+                            <div id="panel2" class="content">
+                                <h3>Location</h3>
+                                <h4>Klaus 1443</h4>
+                                <br />
+                                <h3>Days</h3>
+                                <h4>MW</h4>
+                                <br />
+                                <ul class="small-block-grid-2">
+                                    <li><a href="#" class="large secondary button">Delete</a></li>
+                                    <li><a href="#" class="large secondary button">Navigate Me</a></li>
+                                </ul>
+                            </div>
+                        </dd>
+                        <dd>
+                            <a href="#panel4">1:05pm - ENGL 1102</a>
+                            <div id="panel4" class="content">
+                                <h3>Location</h3>
+                                <h4>Skiles 345</h4>
+                                <br />
+                                <h3>Days</h3>
+                                <h4>MWF</h4>
+                                <br />
+                                <ul class="small-block-grid-2">
+                                    <li><a href="#" data-reveal-id="myModal" class="large secondary button">Delete</a></li>
+                                    <li><a href="#" class="large secondary button">Navigate Me</a></li>
+                                </ul>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+                <div id="myModal" class="reveal-modal tiny" data-reveal>
+                    <h3>This action will delete this event. Are you sure?</h3>
+                    <br>
+                    <br>
+                    <ul class="small-block-grid-2">
+                        <li><a href="newschedule.html" class="large secondary button">Cancel</a></li>
+                        <li><a href="schedule.html" class="large success button">Delete</a></li>
+                    </ul>
+                    <a class="close-reveal-modal">&#215;</a>
+                </div>
+                <div class="content" id="panel2-2" style="margin-bottom: 30%;">
+                    <p>
+                        <div class="calendar">
+                            <div class="day_names cal_row">
+                                <div>Sun<span>day</span></div>
+                                <div>Mon<span>day</span></div>
+                                <div>Tue<span>sday</span></div>
+                                <div>Wed<span>nesday</span></div>
+                                <div>Thur<span>sday</span></div>
+                                <div>Fri<span>day</span></div>
+                                <div>Sat<span>urday</span></div>
+                            </div>
+                            <div class="cal_row">
+                                <div class="prev_month">
+                                    <i>29</i>
+                                </div>
+                                <div class="prev_month">
+                                    <i>30</i>
+                                </div>
+                                <div>
+                                    <i>1</i>
+                                </div>
+                                <div>
+                                    <i>2</i>
+                                </div>
+                                <div>
+                                    <i>3</i>
+                                </div>
+                                <div>
+                                    <i>4</i>
+                                </div>
+                                <div>
+                                    <i>5</i>
+                                </div>
+
+                                <div>
+                                    <i>6</i>
+                                </div>
+                                <div class="has_event">
+                                    <i>7</i>
+                                    <a href="#">MATH 1502</a><br />
+ 
+                                    <a href="#">CS 1301</a><br />
+   
+                                    <a href="#">ENGL 1102</a><br />
+       
+                                </div>
+                                <div>
+                                    <i>8</i>
+                                </div>
+                                <div class="has_event">
+                                    <i>9</i>
+                                    <a href="#">MATH 1502</a><br />
+ 
+                                    <a href="#">CS 1301</a><br />
+   
+                                    <a href="#">ENGL 1102</a><br />
+       
+                                </div>
+                                <div>
+                                    <i>10</i>
+                                </div>
+                                <div class="has_event">
+                                    <i>11</i>
+                                    <a href="#">MATH 1502</a><br />
+ 
+                                    <a href="#">CS 1301</a><br />
+   
+                                    <a href="#">ENGL 1102</a><br />
+       
+                                </div>
+                                <div>
+                                    <i>12</i>
+                                </div>
+
+                                <div>
+                                    <i>13</i>
+                                </div>
+                                <div class="has_event">
+                                    <i>14</i>
+                                    <a href="#">MATH 1502</a><br />
+ 
+                                    <a href="#">CS 1301</a><br />
+   
+                                    <a href="#">ENGL 1102</a><br />
+       
+                                </div>
+                                <div>
+                                    <i>15</i>
+                                </div>
+                                <div class="has_event">
+                                    <i>16</i>
+                                    <a href="#">MATH 1502</a><br />
+ 
+                                    <a href="#">CS 1301</a><br />
+   
+                                    <a href="#">ENGL 1102</a><br />
+       
+                                </div>
+                                <div>
+                                    <i>17</i>
+                                </div>
+                                <div class="has_event">
+                                    <i>18</i>
+                                    <a href="#">MATH 1502</a><br />
+ 
+                                    <a href="#">CS 1301</a><br />
+   
+                                    <a href="#">ENGL 1102</a><br />
+       
+                                </div>
+                                <div>
+                                    <i>19</i>
+                                </div>
+
+                                <div>
+                                    <i>20</i>
+                                </div>
+                                <div class="has_event">
+                                    <i>21</i>
+                                    <a href="#">MATH 1502</a><br />
+ 
+                                    <a href="#">CS 1301</a><br />
+   
+                                    <a href="#">ENGL 1102</a><br />
+       
+                                </div>
+                                <div>
+                                    <i>22</i>
+                                </div>
+                                <div class="has_event">
+                                    <i>23</i>
+                                    <a href="#">MATH 1502</a><br />
+ 
+                                    <a href="#">CS 1301</a><br />
+   
+                                    <a href="#">ENGL 1102</a><br />
+       
+                                </div>
+                                <div>
+                                    <i>24</i>
+                                </div>
+                                <div class="has_event">
+                                    <i>25</i>
+                                    <a href="#">MATH 1502</a><br />
+ 
+                                    <a href="#">CS 1301</a><br />
+   
+                                    <a href="#">ENGL 1102</a><br />
+       
+                                </div>
+                                <div>
+                                    <i>26</i>
+                                </div>
+
+                                <div>
+                                    <i>27</i>
+                                </div>
+                                <div class="has_event">
+                                    <i>28</i>
+                                    <a href="#">MATH 1502</a><br />
+ 
+                                    <a href="#">CS 1301</a><br />
+   
+                                    <a href="#">ENGL 1102</a><br />
+       
+                                </div>
+                                <div>
+                                    <i>29</i>
+                                </div>
+                                <div class="has_event">
+                                    <i>30</i>
+                                    <a href="#">MATH 1502</a><br />
+ 
+                                    <a href="#">CS 1301</a><br />
+   
+                                    <a href="#">ENGL 1102</a><br />
+       
+                                </div>
+                                <div>
+                                    <i>31</i>
+                                </div>
+                                <div class="next_month">
+                                    <i>April 1</i>
+                                </div>
+                                <div class="next_month">
+                                    <i>2</i>
+                                </div>
+                            </div>
+                        </div>
+                    </p>
+                </div>
+            </div>
+            <div class="row" style="position: relative, bottom:0;">
+                <div class="large-12 medium-12 small-12 columns">
+                    <a href="newevent.html" class="medium secondary button" id="new">New Event</a></p>           
+     
+                </div>
+            </div>
+
+            <script src="js/vendor/jquery.js"></script>
+            <script src="js/foundation.min.js"></script>
+            <script>
+                $(document).foundation();
+    </script>-->
+</body>
+</html>

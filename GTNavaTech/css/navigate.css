@@ -42,18 +42,6 @@
     border-bottom: 1px solid #e6e6e6;
 }
 
-.header {
-    padding: 1em;
-    background-color: rgb(208, 209, 216);
-    color: black;
-    font-weight: bold;
-    text-overflow:ellipsis;
-    width: 100%;
-    white-space: nowrap;
-    display: block;
-    overflow: hidden;
-}
-
 .addFavorites {
     background-color: rgb(230, 193, 0);
     color: black;

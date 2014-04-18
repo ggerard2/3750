@@ -22,9 +22,9 @@ function success(position) {
     geocoder = new google.maps.Geocoder();
 
     curr_position = [position.coords.latitude, position.coords.longitude];
-    var myLatlng = new google.maps.LatLng(33.777104, -84.396006); //Klaus
+    //var myLatlng = new google.maps.LatLng(33.777104, -84.396006); //Klaus
     //var myLatlng = new google.maps.LatLng(33.778349, -84.403762); //Fitten
-    //var myLatlng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+    var myLatlng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
     var mapOptions = {
         center: myLatlng,
         disableDefaultUI: true,
@@ -48,23 +48,3 @@ function success(position) {
 
 google.maps.event.addDomListener(window, 'load', initialize);
 
-$(document).ready(function () {
-    Parse.initialize("FbWhMH1sviYaADqZE81YaAy2hz816cBNr7gwHhvT", "flxbQOKGFIWEs23LhJf7i8SGn0WrEtfQSFPnzO6J");
-
-});
-
-function getAddressFromSearch(input) {
-    var Buildings = Parse.Object.extend("Buildings");
-    var query = new Parse.Query(Buildings);
-    query.equalTo("name", input);
-
-    query.find({
-        success: function (result) {
-            alert("result: " + result[0].get("name"));
-            return result[0].get("latlng");
-        },
-        error: function (result) {
-            alert('no first!');
-        }
-    });
-}

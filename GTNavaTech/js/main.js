@@ -19,8 +19,16 @@ $(document).ready(function () {
 
     $("#navigateBtn").on("click", function () {
         var form_validates = $('.input_to_location').val() != '';
+        var toDest = $('.input_to_location').val();
+        
         if (form_validates) {
-            window.location = '/GTNavaTech/navigate.html';
+            if (toDest == 'Klaus, Christopher W. Advanced Computing') {
+                window.location.href = '/navigate_klaus.html';
+            } else if (toDest == 'Boggs Building, Gilbert Hillhouse') {
+                window.location.href = '/navigate_fitten.html';
+            } else {
+                window.location.href = '/navigate.html';
+            }
         } else {
             alert('Please enter a valid destination.');
         }

@@ -7,7 +7,7 @@
         showContent(type);
 
         $('.favorites').removeClass('hide');
-
+        $('.travelTime').removeClass('hide');
     });
 
     $('.addFavorites').on('click', function () {
@@ -29,6 +29,12 @@ function unselectAllContent() {
     $.each($('.steps'), function (index, element) {
         $(element).addClass('hide');
     });
+
+    $.each($('.time'), function (index, element) {
+        $(element).addClass('hide');
+    });
+
+    $('.busArrival').addClass('hide');
 }
 
 function showContent(type) {
@@ -36,11 +42,15 @@ function showContent(type) {
     if (type == 'walk') {
         $('.walkMap').removeClass('hide');
         $('.walkDirections').removeClass('hide');
+        $('.walktime').removeClass('hide');
     } else if (type == 'bus') {
         $('.busMap').removeClass('hide');
         $('.busDirections').removeClass('hide');
+        $('.bustime').removeClass('hide');
+        $('.busArrival').removeClass('hide');
     } else {
         $('.bikeMap').removeClass('hide');
         $('.bikeDirections').removeClass('hide');
+        $('.biketime').removeClass('hide');
     }
 }

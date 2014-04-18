@@ -1,0 +1,69 @@
+/*@group calendar*/
+.calendar {
+	overflow: hidden;
+}
+.cal_row {
+	overflow: hidden;
+}
+.cal_row > div {
+	width: 14%;
+	height: 100px;
+	float: left;
+	display: block;
+	background: #fff;
+	border-bottom: 1px solid #e6e6e6;
+	border-right: 1px solid #e6e6e6;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.cal_row > div:hover {
+	cursor: pointer;
+	background: #f9f9f9;
+}
+.day_names.cal_row > div {
+	background: none;
+	font-weight: bold;
+}
+.day_names.cal_row > div:hover {
+	cursor: inherit;
+}
+.cal_row > div:first-child,
+.cal_row > div:nth-child(7n+8) {
+	border-left: 1px solid #e6e6e6;
+}
+.day_names.cal_row > div {
+	height: auto;
+	text-align: center;
+	font-weight: bold;
+	padding-bottom: 5px;
+	border-right-color: #fff;
+	border-left-color: #fff;
+}
+.cal_row .has_event {
+	background: #f9f9f9;
+}
+.cal_row > div i {
+	padding: 2px 0 0 4px;
+	display: block;
+	color: #222;
+}
+.cal_row > .prev_month i,
+.cal_row > .next_month i {
+	color: #999;
+}
+.cal_row > div a {
+	font-size: 9px;
+	padding: 2px;
+	line-height: 0px;
+}
+
+@media only screen and (max-width: 600px) {
+	.day_names.cal_row > div span {
+		display: none;
+	}
+	.cal_row > div {
+		height: 114px;
+	}
+}
+/*@end calendar*/

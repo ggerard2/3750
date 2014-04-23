@@ -23,11 +23,11 @@ $(document).ready(function () {
         
         if (form_validates) {
             if (toDest == 'Swann Building, Janie Austell') {
-                window.location.href = '/GTNavatech/navigate_klaus.html';
+                window.location.href = '/navigate_klaus.html';
             } else if (toDest == 'Boggs Building, Gilbert Hillhouse') {
-                window.location.href = '/GTNavatech/navigate_fitten.html';
+                window.location.href = '/navigate_fitten.html';
             } else {
-                window.location.href = '/GTNavatech/navigate.html';
+                window.location.href = '/navigate.html';
             }
         } else {
             alert('Please enter a valid destination.');
